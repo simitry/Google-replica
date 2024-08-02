@@ -1,0 +1,148 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+*:focus{
+    outline:none;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header img{
+    width: 82px;
+    height: 28px;
+    margin-top: 1%;
+    margin-left:1%;
+    padding: 10px;
+}
+
+h1{
+    color: #D93025;
+    font-family: Arial, sans-serif;
+    font-weight:normal;
+    font-size: 22px;
+    padding:20px;
+    padding-left:3%;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    padding-left:3%;
+}
+
+th, td { /* Cell padding */
+    text-align: left;
+}
+
+.thead{
+    font-size:18px;
+    margin-bottom: 10px;
+}
+
+#and{
+    text-align:center;
+}
+
+
+input[type="text"], select {
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    height: 35px;
+}
+
+button {
+    background-color: #3E83F1;
+    color: white;
+    border: 1px solid #2F5BB7;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(56, 125, 235);
+    border:1px solid rgb(47,91,183);
+}
+
+select {
+    height: 35px;
+    background-color: #F3F3F3;
+    font-family:Arial,sans-serif;
+    font-weight: bold;
+}
+select:focus{
+    outline: none;
+    border-color: #2c80d4;
+}
+select option:hover{
+    color: red;
+}
+
+footer {
+    background-color: #F2F2F2;
+    padding-bottom: 0px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    top:100%;
+
+}
+
+.footer-links {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.links-left{
+    display: flex;
+}
+
+.links-left {
+    justify-content: flex-start;
+}
+
+
+.links-left a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 95%;
+    }
+}

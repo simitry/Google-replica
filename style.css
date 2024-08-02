@@ -1,0 +1,281 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+*:focus{
+    outline:none;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+#kanye{
+    width:34px;
+    height:34px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.links{
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.links:active ,.links:hover , .footer-container  a:hover{
+    text-decoration:underline;
+}
+
+.myheader{
+    align-items: center;
+    display:flex;
+    justify-content: flex-end;
+    gap:10px;
+    margin-top:10px;
+}
+
+#searchbar {
+    border: 1px solid #DFE1E5;;
+    border-radius: 35px;
+    height: 40px;
+    width: 580px;
+    margin: auto;
+    padding: 4px;
+    display: flex;
+    align-items: center; 
+} 
+
+#searchbar:hover{
+    box-shadow: 0px 0px 5px 1px hsla(225, 6%, 87%, 0.80);
+}
+#searchbar:focus-within{
+    box-shadow: 0px 0px 5px 1px hsla(220, 9%, 87%, 0.80);
+}
+#searchscreen {
+    text-align: center; 
+    margin-top:12%;
+}
+
+
+#googlelogo {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+#searchlogo{
+    width: 20px;
+    height:20px;
+    padding:4px;
+}
+
+#sblogo1 {
+    width: 16px;
+    height: 22px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+
+}
+
+#sblogo2 {
+    width: 23px;
+    height: 23px;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-bottom: 2px;
+}
+
+#closelogo {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    padding-bottom: 4px;
+    padding-right: 5px;
+}
+
+#btn1 {
+    border: white;
+    background-color: white;
+    border-right: 1px solid #DADCE0;
+    padding-top: 10px;
+    margin-top: 4px; 
+    margin-bottom: 4px;
+    display: none;
+}
+
+#sbinput-container > input {
+    border: 1px solid white;
+    width: 420px;
+    height: 30px;
+    margin-left: 0px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#sbinput-container > input:focus {
+    border: none; 
+    outline: none; 
+}
+
+#sbinput-container:focus-within #btn1 {
+    display: inline-block;
+}
+
+#sbinput-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-container{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px;
+}
+.btns{
+    padding:10px;
+    padding-right:20px;
+    padding-left:20px;
+    background-color: #F8F9FA;
+    border-radius: 5px;
+    border: none;
+}
+.btns:hover{
+    border : 1px solid #DADCE0;
+    box-shadow: 0px 0px 1px 1px #DADCE0;
+}
+.btns:active{
+    border-color: #2c80d4;
+    box-shadow: 0px 0px 1px 1px #2c80d4;
+}
+
+footer {
+    background-color: #F2F2F2;
+    margin-top: 326px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+
+}
+
+.footer-links {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.links-left, .links-right {
+    display: flex;
+}
+
+.links-left {
+    justify-content: flex-start;
+}
+
+.links-right {
+    justify-content: flex-end;
+}
+
+.links-left a, .links-right a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width: 500px) {
+    
+    #searchscreen #googlelogo {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        top: 30%;
+        left: 25%;
+        width : 50%;
+        height:8%;   
+    }
+    #searchbar {
+        position: absolute;
+        display:flex;
+        top: 39%; 
+        left: 6%;
+        width: 85%;
+    }
+    #searchbar #sbinput-container{
+        display: flex;
+        width:78%;
+    }
+    #sbinput-container > input {
+        top: 60px;
+        left: 10px;
+        width: 10%;
+    }
+
+    #searchscreen .btn-container {
+        margin-top: 320px; 
+    }
+
+    .btns:active{
+        border-color: #2c80d4;
+        box-shadow: 0px 0px 1px 1px #2c80d4;
+    }
+    
+    .footer-links {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px;
+        justify-content: space-evenly;
+        padding: 10px;
+        padding-top: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .links-left, .links-right {
+        display: flex;
+    }
+    
+    .links-left {
+        justify-content: flex-start;
+    }
+    
+    .links-right {
+        justify-content: flex-end;
+    }
+    
+    .links-left a, .links-right a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
