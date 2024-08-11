@@ -21,30 +21,30 @@
         <tr class="thead">
             <td>Find pages with…</td>
             <td colspan="3"></td>
-            <td>To perform this operation in the search field</td>
+            <td class="textexp">To perform this operation in the search field</td>
         </tr>
     
         <tr>
             <td><p>all of the following words:</p></td>    
             <td colspan="3"><input type="text" id="as_q" name="as_q"></td>
-            <td>Enter the important words: tricolor terrier</td>
+            <td class="textexp">Enter the important words: tricolor terrier</td>
         </tr>
         <tr>
             <td><p>This exact word or expression:</p></td>
             <td colspan="3"><input type="text" id="as_epq" name="as_epq"></td>
-            <td>Add quotation marks around the exact words: "terrier"</td>
+            <td class="textexp">Add quotation marks around the exact words: "terrier"</td>
         </tr>
         
         <tr>
             <td><p>one of the following words:</p></td>
             <td colspan="3"><input type="text" id="as_oq" name="as_oq"></td>
-            <td>Enter OR between all words to include: thumbnail OR standard</td>
+            <td class="textexp">Enter OR between all words to include: thumbnail OR standard</td>
         </tr>
         
         <tr>
             <td><p>none of the following words:</p></td>
             <td colspan="3"><input type="text" id="as_eq" name="as_eq"></td>
-            <td>Place a - (minus) sign in front of words to exclude: -rodent, -"Jack Russell"</td>
+            <td class="textexp">Place a - (minus) sign in front of words to exclude: -rodent, -"Jack Russell"</td>
         </tr>
         
         <tr>
@@ -52,7 +52,7 @@
             <td><input type="text" id="as_nlo" name="as_nlo"></td>
             <td id="and"><p>And</p></td>
             <td><input type="text" id="as_nhi" name="as_nhi"></td>
-            <td>Place a colon between the numbers, and add a unit of measurement: 10..35 kilos, 300..500 USD, 2010..2011</td>
+            <td class="textexp">Place a colon between the numbers, and add a unit of measurement: 10..35 kilos, 300..500 USD, 2010..2011</td>
         </tr>
         <tr>
             <td colspan="5"><hr></td>
@@ -148,7 +148,7 @@
                 <option value="lang_zu">Zulu</option>
 
             </select></td>
-            <td>Search for pages in the selected language</td>
+            <td class="textexp">Search for pages in the selected language</td>
         </tr>
         
         <tr>
@@ -389,7 +389,7 @@
                 <option value="countryZM">Zambia</option>
                 <option value="countryZW">Zimbabwe</option>
             </select></td>
-            <td>Search for pages published in a specific region</td>
+            <td class="textexp">Search for pages published in a specific region</td>
         </tr>
         
         <tr>
@@ -401,13 +401,13 @@
                 <option value="m">in the last 31 days</option>
                 <option value="y">in the last 365 days</option>
             </select></td>
-            <td>Search for pages updated during the specified period</td>
+            <td class="textexp">Search for pages updated during the specified period</td>
         </tr>
 
         <tr>
             <td><p>site or domain:</p></td>
             <td colspan="3"><input type="text" id="as_sitesearch" name="as_sitesearch"></td>
-            <td>Search a site (such as wikipedia.org ) or limit your results to a domain such as .edu , .org , or .gov</td>
+            <td class="textexp">Search a site (such as wikipedia.org ) or limit your results to a domain such as .edu , .org , or .gov</td>
         </tr>
         
         <tr>
@@ -419,7 +419,7 @@
                 <option value="url">in the page URL</option>
                 <option value="links">in the links of the page</option>
             </select></td>
-            <td>Search for terms in the entire page, in a page title, in a web address, or in links to the page you are searching for</td>
+            <td class="textexp">Search for terms in the entire page, in a page title, in a web address, or in links to the page you are searching for</td>
         </tr>
 
         <tr>
@@ -437,7 +437,7 @@
                 <option value="rtf">Rich Texxt Format</option>
                 <option value="swf">Shockwave Flash</option>
             </select></td>
-            <td>Search for pages in the format you prefer</td>
+            <td class="textexp">Search for pages in the format you prefer</td>
         </tr>
         
         <tr>
@@ -449,12 +449,12 @@
                 <option value="sur%3Afm">free of rights of use, distribution or modification</option>
                 <option value="sur%3Afmc">free of rights of use, distribute or modify, including for commercial purposes</option>
             </select></td>
-            <td>Find pages you are free to use</td>
+            <td class="textexp">Find pages you are free to use</td>
         </tr>
         
         <tr>
             <td></td>
-            <td colspan="3"><button type="submit">advanced Search</button></td>
+            <td colspan="3" id="right"><button type="submit">advanced Search</button></td>
             <td></td>
         </tr>
         </tbody>

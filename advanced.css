@@ -9,7 +9,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -61,21 +61,26 @@ input[type="text"], select {
 }
 
 input[type="text"] {
-    height: 35px;
+    height: 30px;
+}
+
+.textexp{
+    color:#555555;
 }
 
 button {
     background-color: #3E83F1;
     color: white;
     border: 1px solid #2F5BB7;
-    padding: 15px 20px;
-    text-align: center;
+    padding: 5px 15px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 10px;
     border-radius: 4px;
     cursor: pointer;
+}
+#right{
+    text-align: right;
 }
 
 button:hover {
@@ -84,7 +89,7 @@ button:hover {
 }
 
 select {
-    height: 35px;
+    height: 30px;
     background-color: #F3F3F3;
     font-family:Arial,sans-serif;
     font-weight: bold;
@@ -95,6 +100,16 @@ select:focus{
 }
 select option:hover{
     color: red;
+}
+
+.links-holder{
+    padding: 0px 35px 30px;
+}
+
+.links-holder a{
+    display:list-item;
+    list-style: none;
+    padding: 2px 0 5px;
 }
 
 footer {
@@ -108,7 +123,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: left;
-    position:absolute;
     bottom:0;
     left:0;
     width:100%;
@@ -122,6 +136,7 @@ footer {
     justify-content: space-between;
     padding: 10px;
     padding-top: 20px;
+
     width: 100%;
     box-sizing: border-box;
 }
