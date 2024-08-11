@@ -4,9 +4,11 @@
     -moz-user-select: none;
     -ms-user-select: none;
 }
-*:focus{
-    outline:none;
+
+*:focus {
+    outline: none;
 }
+
 body {
     font-family: Arial, sans-serif;
     font-size: 12px;
@@ -15,44 +17,82 @@ body {
     padding: 0;
 }
 
-header img{
+.myheader {
+    align-items: center;
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.links:active,
+.links:hover,
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+#kanye {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
     width: 82px;
     height: 28px;
     margin-top: 1%;
-    margin-left:1%;
+    margin-left: 1%;
     padding: 10px;
 }
 
-h1{
+h1 {
     color: #D93025;
     font-family: Arial, sans-serif;
-    font-weight:normal;
+    font-weight: normal;
     font-size: 22px;
-    padding:20px;
-    padding-left:3%;
+    padding: 20px;
+    padding-left: 3%;
 }
 
 form {
     margin: 20px auto;
     padding: 20px;
-    padding-left:3%;
+    padding-left: 3%;
 }
 
-th, td { /* Cell padding */
+th,
+td {
+    /* Cell padding */
     text-align: left;
 }
 
-.thead{
-    font-size:18px;
+.thead {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-#and{
-    text-align:center;
+#and {
+    text-align: center;
 }
 
 
-input[type="text"], select {
+input[type="text"],
+select {
     width: 100%;
     padding: 0px;
     border: 1px solid #ddd;
@@ -64,8 +104,8 @@ input[type="text"] {
     height: 30px;
 }
 
-.textexp{
-    color:#555555;
+.textexp {
+    color: #555555;
 }
 
 button {
@@ -79,35 +119,38 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-#right{
+
+#right {
     text-align: right;
 }
 
 button:hover {
     background-color: rgb(56, 125, 235);
-    border:1px solid rgb(47,91,183);
+    border: 1px solid rgb(47, 91, 183);
 }
 
 select {
     height: 30px;
     background-color: #F3F3F3;
-    font-family:Arial,sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
 }
-select:focus{
+
+select:focus {
     outline: none;
     border-color: #2c80d4;
 }
-select option:hover{
+
+select option:hover {
     color: red;
 }
 
-.links-holder{
+.links-holder {
     padding: 0px 35px 30px;
 }
 
-.links-holder a{
-    display:list-item;
+.links-holder a {
+    display: list-item;
     list-style: none;
     padding: 2px 0 5px;
 }
@@ -123,10 +166,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: left;
-    bottom:0;
-    left:0;
-    width:100%;
-    top:100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: 100%;
 
 }
 
@@ -141,7 +184,7 @@ footer {
     box-sizing: border-box;
 }
 
-.links-left{
+.links-left {
     display: flex;
 }
 
@@ -150,7 +193,7 @@ footer {
 }
 
 
-.links-left a{
+.links-left a {
     margin: 0 10px;
     text-decoration: none;
     color: black;
